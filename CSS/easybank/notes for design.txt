@@ -1,0 +1,7 @@
+notes :
+-Web site has icon for the header.
+-Mobile version :
+	-background of the phone is maxed.
+	-حواف الصور معكوفة
+	-الصورة ليست float وانما على نفس حجم ال dev
+	-align:center

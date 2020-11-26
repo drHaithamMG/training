@@ -1,13 +1,10 @@
 @media screen and (min-width:376px){
    body{
-       /*add font color*/
        font-family: 'Public Sans', sans-serif;
        font-size: 18px;
        font-weight: 400;
        line-height: 1.5;
- 
-
-   }
+    }
    h1,h2,h3,h4,h5,h6{
         color:hsl(233, 26%, 24%) ;
         font-weight: 400;
@@ -43,6 +40,9 @@
    .nav-menu{
        display: inline;
    }
+   .mobile-nav{
+       display: none;
+   }
    .nav-menu a{
        text-decoration: none;
        color: hsl(233, 8%, 62%);
@@ -59,7 +59,9 @@
         background-image: linear-gradient(to right,hsl(136, 65%, 51%), hsl(192, 70%, 51%));
         cursor: pointer;
    }
-
+   .mobile-interface ,.mobile-interface-bottom {
+       display: none;
+   }
    .top-content{
        
         height: 25%;

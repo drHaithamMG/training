@@ -1,0 +1,14 @@
+html {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.people_icon_style {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}

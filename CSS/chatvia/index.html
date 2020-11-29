@@ -5,24 +5,103 @@
     <!-- material icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Dashboard|chatvia</title>
+    <title>Dashboard | Chatvia</title>
 </head>
 
 <body>
     <header>
-        <div class="logo"></div>
-        <div class="nav"></div>
-        <div class="options"></div>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.svg" alt="chatvia"></a>
+        </div>
+        <div class="nav">
+            <a href="#" title="Profile" class="material-icons">perm_identity</a>
+            <a href="#" title="Chats" class="material-icons">chat</a>
+            <a href="#" title="Groups" class="material-icons">groups</a>
+            <a href="#" title="Contacts" class="material-icons">contacts</a>
+            <a href="#" title="Settings" class="material-icons">settings</a>
+        </div>
+        <div class="options">
+            <a href="#" title="Language" class="material-icons">language</a>
+            <a href="#" title="Dark/Light Mode" class="material-icons">brightness_4</a>
+            <!-- set profile image -->
+            <a href="#" title="Me"><img src="" alt=""></a>
+        </div>
     </header>
     <section class="chats-section">
-        <div class="title"></div>
-        <div class="search"></div>
-        <div class="people"></div>
-        <div class="supTitle"></div>
-        <div class="conv"></div>
+        <div class="title">
+            <h2>Chats</h2>
+        </div>
+        <div class="search">
+            <a href="#" title="Search" class="material-icons">search</a>
+            <input type="search" title="Search" name="search-contact">
+        </div>
+        <div class="people">
+            <div class="people-container">
+                <div class="image-container">
+                    <!-- put image here for person -->
+                    <!-- this is a global container 
+                    to custmize use another class-->
+                    <img src="" alt="">
+                    <a href="#" title="Online" class="material-icons">fiber_manual_record</a>
+                </div>
+                <div class="person-name">
+                    <span class="name">
+                        <!-- put name here -->
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="supTitle">
+            <span class="sub-title">Recent</span>
+        </div>
+        <div class="conv">
+            <div class="con-body">
+                <div class="image-container">
+                    <!-- put image here for person -->
+                    <!-- this is a global container 
+                    to custmize use another class -->
+                    <img src="" alt="">
+                    <a href="#" title="Online" class="material-icons">fiber_manual_record</a>
+                </div>
+                <div class="content">
+                    <!-- name and last message -->
+                    <span class="person-name"></span>
+                    <span class="last-message"></span>
+                </div>
+                <div class="prob">
+                    <!-- message time and message announcment -->
+                    <span class="time"></span>
+                    <span class="announcment"></span>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="conversation-section">
+        <div class="chat-header">
+            <div class="identy">
+                <!-- icon,name and pro -->
+                <img src="" alt="">
+                <span></span>
+                <a href="#" title="Online" class="material-icons">fiber_manual_record</a>
+            </div>
+            <div class="chat-prob">
+                <a href="#" title="Search" class="material-icons">search</a>
+                <a href="#" title="Profile" class="material-icons">face</a>
+                <a href="#" title="More options" class="material-icons">more_horiz</a>
+                <!-- There are more options to add on 'more options' -->
+            </div>
+        </div>
+        <div class="chat-body"></div>
+        <div class="chat-footer">
+            <input type="text" name="message" id="new-message">
+            <a href="#" title="Emojis" class="material-icons">sentiment_satisfied_alt</a>
+            <a href="#" title="Attach file" class="material-icons">attach_file</a>
+            <a href="#" title="Images" class="material-icons">add_photo_alternate</a>
+            <a href="#" title="Send" class="material-icons">send</a>
 
+
+
+        </div>
     </section>
 </body>
 

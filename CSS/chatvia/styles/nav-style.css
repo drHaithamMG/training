@@ -1,6 +1,7 @@
 @media screen and (min-width:901px) {
     .navigation {
-        color: hsl(100, 100%, 100%);
+        z-index: 1;
+        background-color: #f7f7ff;
         display: flex;
         flex-direction: column;
         width: 75px;
@@ -45,7 +46,8 @@
 
 @media screen and (max-width:900px) {
     .navigation {
-        color: white;
+        z-index: 1;
+        background-color: #f7f7ff;
         display: flex;
         flex-direction: row;
         justify-content: center;

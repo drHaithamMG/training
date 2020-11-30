@@ -4,28 +4,30 @@
 <head>
     <!-- material icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/nav-style.css">
+    <link rel="stylesheet" href="styles/conversation-section.css">
+    <link rel="stylesheet" href="styles/chats-section.css">
     <title>Dashboard | Chatvia</title>
 </head>
 
 <body>
     <div class="root">
         <header>
-            <div class="logo">
+            <div class="logo mobile-version">
                 <a href="index.html"><img src="images/logo.svg" alt="chatvia"></a>
             </div>
             <div class="nav">
-                <a href="#" title="Profile" class="material-icons">perm_identity</a>
-                <a href="#" title="Chats" class="material-icons">chat</a>
-                <a href="#" title="Groups" class="material-icons">groups</a>
-                <a href="#" title="Contacts" class="material-icons">contacts</a>
-                <a href="#" title="Settings" class="material-icons">settings</a>
+                <a href="#" title="Profile" class="material-icons md-36">perm_identity</a>
+                <a href="#" title="Chats" class="active material-icons md-36 active" selected>chat</a>
+                <a href="#" title="Groups" class="material-icons md-36">groups</a>
+                <a href="#" title="Contacts" class="material-icons md-36">contacts</a>
+                <a href="#" title="Settings" class="material-icons md-36">settings</a>
             </div>
             <div class="options">
-                <a href="#" title="Language" class="material-icons">language</a>
-                <a href="#" title="Dark/Light Mode" class="material-icons">brightness_4</a>
-                <!-- set profile image -->
-                <a href="#" title="Me"><img src="" alt=""></a>
+                <a href="#" title="Language" class="mobile-version material-icons md-36">language</a>
+                <a href="#" title="Dark/Light Mode" class="mobile-version material-icons md-36">brightness_4</a>
+                <img class="profile-nav" src="images/LucasSankey.jpeg" alt="Lucas Lucas Sankey">
             </div>
         </header>
         <section class="chats-section">

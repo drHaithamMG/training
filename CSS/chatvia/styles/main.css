@@ -1,0 +1,21 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    background-color: #f7f7ff;
+}
+
+
+/*style for google material design icons*/
+
+.material-icons.md-36 {
+    font-size: 28px;
+    color: #878a92;
+}
+
+img,
+svg {
+    vertical-align: middle;
+}

@@ -1,0 +1,28 @@
+.chats-section {
+    display: none;
+}
+
+
+/* 
+.people_icon_style {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.chats-section {
+    background-color: #f7f7ff;
+    display: flex;
+    flex-direction: column;
+    border-right: solid 2px gainsboro;
+    width: 400px;
+    justify-content: space-between;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 75px;
+}
+
+.conversation-section {
+    display: none;
+} */

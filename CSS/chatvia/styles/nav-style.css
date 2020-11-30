@@ -1,5 +1,5 @@
 @media screen and (min-width:901px) {
-    header {
+    .navigation {
         color: hsl(100, 100%, 100%);
         display: flex;
         flex-direction: column;
@@ -29,8 +29,8 @@
     }
     .active.md-36 {
         color: #7269ef;
-        border: 1px solid #f7f7ff;
-        background-color: #f7f7ff;
+        background-color: #e6ebf5;
+        border-radius: 10px;
     }
     .profile-nav {
         width: 30px;
@@ -44,7 +44,7 @@
 /*Mobile version view*/
 
 @media screen and (max-width:900px) {
-    header {
+    .navigation {
         color: white;
         display: flex;
         flex-direction: row;
@@ -64,18 +64,20 @@
     }
     .active.md-36 {
         color: #7269ef;
-        border: 1px solid #f1f7f7;
-        background-color: #f7f7ff;
+        background-color: #e6ebf5;
+        border-radius: 10px;
+        padding: 10px;
     }
     .nav {
-        min-width: 600px;
+        min-width: 755px;
         align-self: center;
         justify-content: space-between;
     }
     .nav a,
     .options a {
         cursor: pointer;
-        padding-right: 100px;
+        margin-right: 100px;
+        padding: 5px;
     }
     .profile-nav {
         width: 30px;

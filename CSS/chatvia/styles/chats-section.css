@@ -9,6 +9,7 @@
         box-shadow: 0 2px 4px rgba(15, 34, 58, .12);
         justify-content: start;
         background-color: #f7f7ff;
+        z-index: 1;
     }
     .title h2 {
         margin: 25px;

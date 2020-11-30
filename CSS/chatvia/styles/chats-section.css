@@ -1,28 +1,94 @@
-.chats-section {
-    display: none;
+@media screen and (min-width:901px) {
+    .chats-section {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        height: 100%;
+        position: fixed;
+        left: 76px;
+        box-shadow: 0 2px 4px rgba(15, 34, 58, .12);
+        justify-content: start;
+        background-color: #f7f7ff;
+    }
+    .title h2 {
+        margin: 25px;
+    }
+    .people_icon_style {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .search {
+        margin: 0 25px;
+        display: flex;
+        background-color: #e6ebf5;
+        border-radius: 7px;
+        padding: 10px;
+    }
+    .search input {
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        font-size: 16px;
+        border: 0;
+        justify-content: center;
+    }
+    .people {
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+        height: 15%;
+    }
+    .people-container {
+        position: relative;
+        margin-left: 30px;
+        background-color: green;
+        z-index: 1;
+    }
 }
 
-
-/* 
-.people_icon_style {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+@media screen and (max-width:900) {
+    .chats-section {
+        display: flex;
+        flex-direction: column;
+        height: 350px;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+        left: 76px;
+        box-shadow: 0 2px 4px rgba(15, 34, 58, .12);
+        justify-content: center;
+        background-color: #f7f7ff;
+    }
+    .title h2 {
+        margin: 25px;
+    }
+    .people_icon_style {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .search {
+        margin: 0 25px;
+        display: flex;
+        background-color: #e6ebf5;
+        border-radius: 7px;
+        padding: 10px;
+    }
+    .search input {
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        font-size: 16px;
+        border: 0;
+        justify-content: center;
+    }
+    .people {
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+    }
+    .people-container {
+        position: relative;
+    }
 }
-
-.chats-section {
-    background-color: #f7f7ff;
-    display: flex;
-    flex-direction: column;
-    border-right: solid 2px gainsboro;
-    width: 400px;
-    justify-content: space-between;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 75px;
-}
-
-.conversation-section {
-    display: none;
-} */

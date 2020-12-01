@@ -15,13 +15,14 @@
   .people {
     /* background-color: green; */
     display: flex;
+    position: sticky;
     align-items: center;
     justify-content: safe;
     flex-direction: row;
     overflow-x: scroll;
     overflow-y: visible;
     width: 94%;
-    height: 15%;
+    height: 20%;
     margin: 0 auto;
   }
   .people-container {
@@ -69,11 +70,11 @@
     border-radius: 50%;
     position: relative;
   }
-  .on-off-line{
-      position: absolute;
-      bottom: 1px;
-      left: 1.8ch;
-      color: green;
+  .on-off-line {
+    position: absolute;
+    bottom: 1px;
+    left: 1.8ch;
+    color: green;
   }
   .supTitle {
     margin: 25px;
@@ -90,28 +91,29 @@
   .conv {
     padding: 20px;
     background-color: transparent;
-    width: 1calc(100% - 20px);
-    overflow: scroll;
+    width: 1calc (100% - 20px);
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
-  .material-icons.es{
-      font-size: 16px;
-      
+  .material-icons.es {
+    font-size: 16px;
   }
-  .last-message{
-      margin-top: 5px;
+  .last-message {
+    margin-top: 5px;
   }
   .conv img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
   }
-  .on-off-line{
-      position: absolute;
+  .on-off-line {
+    position: absolute;
   }
   .con-body {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    margin-top: 15px;
   }
   .content {
     display: flex;

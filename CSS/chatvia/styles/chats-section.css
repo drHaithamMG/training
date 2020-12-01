@@ -69,11 +69,17 @@
     border-radius: 50%;
     position: relative;
   }
-  .on-off-line {
+  .on-line {
     position: absolute;
     bottom: 1px;
     left: 1.8ch;
     color: green;
+  }
+  .off-line {
+    position: absolute;
+    bottom: 1px;
+    left: 1.8ch;
+    color: yellow;
   }
   .supTitle {
     margin: 25px;
@@ -117,6 +123,10 @@
   .content {
     display: flex;
     flex-direction: column;
+  }
+  .prob{
+    display: flex;
+    flex-direction: column; 
   }
 }
 
@@ -190,12 +200,18 @@
       border-radius: 50%;
       position: relative;
     }
-    .on-off-line {
+    .on-line {
       position: absolute;
       bottom: 1px;
       left: 1.8ch;
       color: green;
     }
+    .off-line {
+        position: absolute;
+        bottom: 1px;
+        left: 1.8ch;
+        color: yellow;
+      }
     .supTitle {
       margin: 25px;
       font-size: 18px;
@@ -239,5 +255,9 @@
       display: flex;
       flex-direction: column;
     }
+    .prob{
+        display: flex;
+        flex-direction: column; 
+      }
   }
   

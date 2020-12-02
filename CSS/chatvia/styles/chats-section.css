@@ -1,6 +1,6 @@
 @media screen and (min-width: 901px) {
   .chats-section {
-    display: flex;
+    display: block;
     flex-direction: column;
     width: 385px;
     height: 100%;
@@ -12,17 +12,19 @@
   .title h2 {
     margin: 25px;
   }
+  .img-name.selected{
+    background-color: #e6ebf5;
+    height: 12%;
+  }
   .people {
-    /* background-color: green; */
     display: flex;
-    position: sticky;
     align-items: center;
     justify-content: safe;
     flex-direction: row;
-    overflow-x: scroll;
-    overflow-y: visible;
+    overflow-x: auto;
+    overflow-y: hidden;
     width: 94%;
-    height: 20%;
+    height: 120px;
     margin: 0 auto;
   }
   .people-container {
@@ -30,13 +32,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: #e6ebf5;
-    padding: 15px 10px;
+    padding: 15px 15px;
     border-radius: 5px;
     margin-left: 15px;
+    cursor: pointer;
   }
   .name {
-    font-size: 15px;
+    font-size: 13px;
+    font-weight: 500;
+
   }
   .image-container {
     position: absolute;
@@ -46,6 +52,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    object-fit: cover;
   }
   .search {
     margin: 0 auto;
@@ -62,6 +69,7 @@
     font-size: 16px;
     border: 0;
     justify-content: center;
+    outline: none;
   }
 
   .image-container-recent-doc {
@@ -69,54 +77,282 @@
     height: 40px;
     border-radius: 50%;
     position: relative;
+    object-fit: cover;
+
   }
-  .on-off-line {
+  .on-line {
     position: absolute;
     bottom: 1px;
     left: 1.8ch;
-    color: green;
+    color:#06d6a0;
+  }
+  .off-line {
+    position: absolute;
+    bottom: 1px;
+    left: 1.8ch;
+    color: #ffd166;
   }
   .supTitle {
-    margin: 25px;
+    margin: 25px 25px 0 25px ;
     font-size: 18px;
   }
   .recent {
     display: flex;
     align-content: center;
     flex-direction: column;
-    height: 100%;
+    height: 70%;
     width: 100%;
     background-color: transparent;
   }
   .conv {
     padding: 20px;
     background-color: transparent;
-    width: 1calc (100% - 20px);
-    overflow-y: scroll;
-    overflow-x: hidden;
+    width: calc(100% - 20px);
+    overflow: auto;
+    height: 100%;
   }
   .material-icons.es {
     font-size: 16px;
   }
   .last-message {
     margin-top: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #7a7f9a;
+    font-size: 14px;
+  }
+  .announcment .es{
+    color: #ef476f;
+    
   }
   .conv img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    object-fit: cover;
+
   }
   .on-off-line {
     position: absolute;
   }
   .con-body {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: row;
     margin-top: 15px;
   }
   .content {
     display: flex;
     flex-direction: column;
+    margin-left: 15px;
+  }
+  .prob {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-self: center;
+    margin-top: 15px;
+
+    
+  }
+  .img-name {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  .typing-effect{
+    color: #7269ef;
+    font-weight: 500;
+    
+  }
+  .typing-effect img{
+    height: 50%;
+    object-fit: cover;
+
+  }
+  .time{
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #7a7f9a;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .chats-section {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    box-shadow: 2px 2px 2px rgba(15, 34, 58, 0.12);
+    background-color: #f7f7ff;
+  }
+  .title h2 {
+    margin: 25px;
+  }
+  .people {
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: safe;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: calc(100% - 30px);
+    height: 120px;
+    margin: 0 auto;
+  }
+  .people-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #e6ebf5;
+    padding: 15px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  .name {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .image-container {
+    position: absolute;
+    top: -22px;
+  }
+  .people_icon_style {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+
+  }
+  .search {
+    margin: 0 auto;
+    width: calc(100% - 50px);
+    display: flex;
+    background-color: #e6ebf5;
+    border-radius: 7px;
+    padding: 10px;
+  }
+  .search input {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: 0;
+    justify-content: center;
+    outline: none;
+
+  }
+
+  .image-container-recent-doc {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    object-fit: cover;
+
+  }
+  .img-name.selected{
+    background-color: #e6ebf5;
+    height: 15%;
+  }
+  .on-line {
+    position: absolute;
+    bottom: 1px;
+    left: 1.8ch;
+    color: #06d6a0;
+  }
+  .off-line {
+    position: absolute;
+    bottom: 1px;
+    left: 1.8ch;
+    color: #ffd166;
+  }
+  .supTitle {
+    margin-top: 25px;
+    margin-left: 25px;
+    font-size: 18px;
+  }
+  .recent {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    height: 70%;
+    width: 100%;
+    background-color: transparent;
+  }
+  .conv {
+    padding: 10px 20px;
+    background-color: transparent;
+    width: calc (100% - 20px);
+    overflow: auto;
+    height: 100%;
+  }
+  .material-icons.es {
+    font-size: 16px;
+  }
+  .last-message {
+    margin-top: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #7a7f9a;
+    font-size: 14px;
+
+  }
+  .announcment .es{
+    color: #ef476f;
+  }
+  .conv img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+
+  }
+  .on-off-line {
+    position: absolute;
+  }
+  .con-body {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+  .prob {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-self: center;
+  }
+  .img-name {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+  }
+  .typing-effect{
+    color: #7269ef;
+    font-weight: 500;
+  }
+  .typing-effect img{
+    height: 50%;
+    font-weight: 500;
+    object-fit: cover;
+
+  }
+  .time{
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #7a7f9a;
   }
 }

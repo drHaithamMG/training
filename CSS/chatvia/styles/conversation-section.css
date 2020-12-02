@@ -3,22 +3,22 @@
   height: 100%;
   position: fixed;
   left: 464px;
-
 }
 .chat-header {
+  background-color: #f7f7ff;
   display: flex;
   justify-content: space-between;
   padding: 30px 25px;
-  border-bottom: 1px solid rgba(15, 34, 58, .12);
-
+  border-bottom: 1px solid rgba(15, 34, 58, 0.12);
 }
 .identy {
   display: inline-flex;
-  justify-content: space-between;
-  width: calc(10% + 25px);
+  justify-content: start;
+  width: 50%;
 }
 .identy span {
   margin-top: 10px;
+  margin-left: 15px;
 }
 .chat-prob {
   display: inline-flex;
@@ -30,43 +30,119 @@
   height: 40px;
   border-radius: 50%;
   z-index: 1;
+  object-fit: cover;
 }
+
 /*conversation body sets here*/
 
+.chat-body {
+  height: 82%;
+  background-color: #f7f7ff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.conversation-body {
+  width: 95%;
+  height: 100%;
+}
+.body-of-message {
+  margin: 15px;
+  max-width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+.message-left {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.message-left img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.message-mid {
+  display: flex;
+  flex-direction: column;
+}
+.message {
+  position: relative;
+  display: flex;
+  margin: 15px 0px 15px 15px;
+  flex-direction: column;
+  background-color: #7269ef;
+  border-radius: 5px;
+}
+.message::before {
+  content: "";
+  position: absolute;
+  border-color: #7269ef transparent transparent #7269ef;
+  border-style: solid;
+  border-width: 5px;
+  left: 0px;
+  bottom: -6px;
+}
+.message-content {
+  padding: 15px;
+  color: white;
+}
+.material-icons.time {
+  font-size: 10px;
+  text-align: right;
+  color: hotpink;
+}
+.edit {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 15px;
+  padding: 15px;
+  color: hsla(0, 0%, 100%, 0.5);
+}
+.senders {
+  padding-left: 15px;
+  color: #495057;
+}
+.message-right {
+  margin-top: 15px;
+  cursor: pointer;
+}
 
 /*end conversation body*/
-.chat-footer{
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left:464px;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding:15px 0;
+.chat-footer {
+  background-color: #f7f7ff;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 464px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 15px 0;
 }
-.chat-footer input{
-    width: 68%;
-    padding: 15px ;
-    border-radius: 7px;
-    border: 0;
-    background-color:#e6ebf5 ;
-    color:#495057;
-    outline: none;
-    font-size: 16px;
+.chat-footer input {
+  width: 68%;
+  padding: 15px;
+  border-radius: 7px;
+  border: 0;
+  background-color: #e6ebf5;
+  color: #495057;
+  outline: none;
+  font-size: 16px;
 }
-.footer-icons{
-    color: #7269ef;
-    font-size: 18px;
+.footer-icons {
+  color: #7269ef;
+  font-size: 18px;
 }
-.footer-send{
-    color: white;
-    background-color:#7269ef ;
-    padding:18px 22px;
-    border-radius: 10px;
-    font-size: 16px;
+.footer-send {
+  color: white;
+  background-color: #7269ef;
+  padding: 18px 22px;
+  border-radius: 10px;
+  font-size: 16px;
 }
-
 
 @media screen and (max-width: 900px) {
   .conversation-section {

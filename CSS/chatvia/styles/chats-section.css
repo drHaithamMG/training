@@ -12,6 +12,10 @@
   .title h2 {
     margin: 25px;
   }
+  .img-name.selected{
+    background-color: #e6ebf5;
+    height: 12%;
+  }
   .people {
     display: flex;
     align-items: center;
@@ -28,10 +32,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: #e6ebf5;
     padding: 15px 15px;
     border-radius: 5px;
     margin-left: 15px;
+    cursor: pointer;
   }
   .name {
     font-size: 13px;
@@ -46,6 +52,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    object-fit: cover;
   }
   .search {
     margin: 0 auto;
@@ -70,6 +77,8 @@
     height: 40px;
     border-radius: 50%;
     position: relative;
+    object-fit: cover;
+
   }
   .on-line {
     position: absolute;
@@ -84,8 +93,7 @@
     color: #ffd166;
   }
   .supTitle {
-    margin-top: 25px;
-    margin-left: 25px;
+    margin: 25px 25px 0 25px ;
     font-size: 18px;
   }
   .recent {
@@ -99,7 +107,7 @@
   .conv {
     padding: 20px;
     background-color: transparent;
-    width: 1calc (100% - 20px);
+    width: calc(100% - 20px);
     overflow: auto;
     height: 100%;
   }
@@ -122,6 +130,8 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    object-fit: cover;
+
   }
   .on-off-line {
     position: absolute;
@@ -150,13 +160,18 @@
     display: inline-flex;
     justify-content: space-between;
     width: 100%;
+    cursor: pointer;
+    margin-top: 15px;
   }
   .typing-effect{
     color: #7269ef;
     font-weight: 500;
+    
   }
   .typing-effect img{
     height: 50%;
+    object-fit: cover;
+
   }
   .time{
     margin-bottom: 5px;
@@ -212,6 +227,8 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    object-fit: cover;
+
   }
   .search {
     margin: 0 auto;
@@ -237,6 +254,12 @@
     height: 40px;
     border-radius: 50%;
     position: relative;
+    object-fit: cover;
+
+  }
+  .img-name.selected{
+    background-color: #e6ebf5;
+    height: 15%;
   }
   .on-line {
     position: absolute;
@@ -289,6 +312,8 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    object-fit: cover;
+
   }
   .on-off-line {
     position: absolute;
@@ -297,7 +322,6 @@
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
-    margin-top: 15px;
   }
   .content {
     display: flex;
@@ -309,12 +333,12 @@
     flex-direction: column;
     text-align: right;
     justify-self: center;
-    margin-top: 15px;
   }
   .img-name {
     display: inline-flex;
     justify-content: space-between;
     width: 100%;
+    cursor: pointer;
   }
   .typing-effect{
     color: #7269ef;
@@ -322,8 +346,9 @@
   }
   .typing-effect img{
     height: 50%;
-    color: #7269ef;
     font-weight: 500;
+    object-fit: cover;
+
   }
   .time{
     margin-bottom: 5px;

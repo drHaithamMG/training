@@ -13,7 +13,6 @@
     margin: 25px;
   }
   .people {
-    /* background-color: green; */
     display: flex;
     align-items: center;
     justify-content: safe;
@@ -63,6 +62,7 @@
     font-size: 16px;
     border: 0;
     justify-content: center;
+    outline: none;
   }
 
   .image-container-recent-doc {
@@ -228,6 +228,8 @@
     font-size: 16px;
     border: 0;
     justify-content: center;
+    outline: none;
+
   }
 
   .image-container-recent-doc {

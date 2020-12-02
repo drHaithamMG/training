@@ -18,7 +18,7 @@
     align-items: center;
     justify-content: safe;
     flex-direction: row;
-    overflow-x:auto;
+    overflow-x: auto;
     overflow-y: hidden;
     width: 94%;
     height: 120px;
@@ -30,12 +30,14 @@
     flex-direction: column;
     justify-content: center;
     background-color: #e6ebf5;
-    padding: 15px 10px;
+    padding: 15px 15px;
     border-radius: 5px;
     margin-left: 15px;
   }
   .name {
-    font-size: 15px;
+    font-size: 13px;
+    font-weight: 500;
+
   }
   .image-container {
     position: absolute;
@@ -73,16 +75,17 @@
     position: absolute;
     bottom: 1px;
     left: 1.8ch;
-    color: green;
+    color:#06d6a0;
   }
   .off-line {
     position: absolute;
     bottom: 1px;
     left: 1.8ch;
-    color: yellow;
+    color: #ffd166;
   }
   .supTitle {
-    margin: 25px;
+    margin-top: 25px;
+    margin-left: 25px;
     font-size: 18px;
   }
   .recent {
@@ -97,7 +100,7 @@
     padding: 20px;
     background-color: transparent;
     width: 1calc (100% - 20px);
-    overflow:auto;
+    overflow: auto;
     height: 100%;
   }
   .material-icons.es {
@@ -105,6 +108,15 @@
   }
   .last-message {
     margin-top: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #7a7f9a;
+    font-size: 14px;
+  }
+  .announcment .es{
+    color: #ef476f;
+    
   }
   .conv img {
     width: 40px;
@@ -116,148 +128,204 @@
   }
   .con-body {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: row;
     margin-top: 15px;
   }
   .content {
     display: flex;
     flex-direction: column;
+    margin-left: 15px;
   }
-  .prob{
+  .prob {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    text-align: right;
+    justify-self: center;
+    margin-top: 15px;
+
+    
+  }
+  .img-name {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .typing-effect{
+    color: #7269ef;
+    font-weight: 500;
+  }
+  .typing-effect img{
+    height: 50%;
+  }
+  .time{
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #7a7f9a;
   }
 }
 
 @media screen and (max-width: 900px) {
-    .chats-section {
-      display: block;
-      flex-direction: column;
-      width: 100%;
-      height: 100%;
-      position: fixed;
-      box-shadow: 2px 2px 2px rgba(15, 34, 58, 0.12);
-      background-color: #f7f7ff;
-    }
-    .title h2 {
-      margin: 25px;
-    }
-    .people {
-      /* background-color: green; */
-      display: flex;
-      align-items: center;
-      justify-content: safe;
-      flex-direction: row;
-      overflow-x:auto;
-      overflow-y: hidden;
-      width: 94%;
-      height: 160px;
-      margin: 0 auto;
-    }
-    .people-container {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background-color: #e6ebf5;
-      padding: 15px 10px;
-      border-radius: 5px;
-      margin-left: 15px;
-    }
-    .name {
-      font-size: 15px;
-    }
-    .image-container {
-      position: absolute;
-      top: -22px;
-    }
-    .people_icon_style {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-    }
-    .search {
-      margin: 0 auto;
-      width: 85%;
-      display: flex;
-      background-color: #e6ebf5;
-      border-radius: 7px;
-      padding: 10px;
-    }
-    .search input {
-      width: 100%;
-      height: 100%;
-      padding: 5px;
-      font-size: 16px;
-      border: 0;
-      justify-content: center;
-    }
-  
-    .image-container-recent-doc {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      position: relative;
-    }
-    .on-line {
-      position: absolute;
-      bottom: 1px;
-      left: 1.8ch;
-      color: green;
-    }
-    .off-line {
-        position: absolute;
-        bottom: 1px;
-        left: 1.8ch;
-        color: yellow;
-      }
-    .supTitle {
-      margin: 25px;
-      font-size: 18px;
-    }
-    .recent {
-      display: flex;
-      align-content: center;
-      flex-direction: column;
-      height: 70%;
-      width: 100%;
-      background-color: transparent;
-    }
-    .conv {
-      padding: 20px;
-      background-color: transparent;
-      width: 1calc (100% - 20px);
-      overflow:auto;
-      height: 100%;
-    }
-    .material-icons.es {
-      font-size: 16px;
-    }
-    .last-message {
-      margin-top: 5px;
-    }
-    .conv img {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-    }
-    .on-off-line {
-      position: absolute;
-    }
-    .con-body {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      margin-top: 15px;
-    }
-    .content {
-      display: flex;
-      flex-direction: column;
-    }
-    .prob{
-        display: flex;
-        flex-direction: column; 
-      }
+  .chats-section {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    box-shadow: 2px 2px 2px rgba(15, 34, 58, 0.12);
+    background-color: #f7f7ff;
   }
-  
+  .title h2 {
+    margin: 25px;
+  }
+  .people {
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: safe;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: calc(100% - 30px);
+    height: 120px;
+    margin: 0 auto;
+  }
+  .people-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #e6ebf5;
+    padding: 15px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  .name {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .image-container {
+    position: absolute;
+    top: -22px;
+  }
+  .people_icon_style {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .search {
+    margin: 0 auto;
+    width: calc(100% - 50px);
+    display: flex;
+    background-color: #e6ebf5;
+    border-radius: 7px;
+    padding: 10px;
+  }
+  .search input {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: 0;
+    justify-content: center;
+  }
+
+  .image-container-recent-doc {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+  }
+  .on-line {
+    position: absolute;
+    bottom: 1px;
+    left: 1.8ch;
+    color: #06d6a0;
+  }
+  .off-line {
+    position: absolute;
+    bottom: 1px;
+    left: 1.8ch;
+    color: #ffd166;
+  }
+  .supTitle {
+    margin-top: 25px;
+    margin-left: 25px;
+    font-size: 18px;
+  }
+  .recent {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    height: 70%;
+    width: 100%;
+    background-color: transparent;
+  }
+  .conv {
+    padding: 10px 20px;
+    background-color: transparent;
+    width: calc (100% - 20px);
+    overflow: auto;
+    height: 100%;
+  }
+  .material-icons.es {
+    font-size: 16px;
+  }
+  .last-message {
+    margin-top: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #7a7f9a;
+    font-size: 14px;
+
+  }
+  .announcment .es{
+    color: #ef476f;
+  }
+  .conv img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .on-off-line {
+    position: absolute;
+  }
+  .con-body {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 15px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+  .prob {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-self: center;
+    margin-top: 15px;
+  }
+  .img-name {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .typing-effect{
+    color: #7269ef;
+    font-weight: 500;
+  }
+  .typing-effect img{
+    height: 50%;
+    color: #7269ef;
+    font-weight: 500;
+  }
+  .time{
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #7a7f9a;
+  }
+}

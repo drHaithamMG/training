@@ -9,7 +9,12 @@
     font-family: 'Roboto', sans-serif;
 
 }
-
+h1,h2,h3,h4.h5,h6{
+    color:#495057;
+}
+h1{
+    font-weight: bold;
+}
 
 /*style for google material design icons*/
 

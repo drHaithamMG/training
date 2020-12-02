@@ -38,6 +38,9 @@ svg {
 }
 
 .material-icons {
+    outline: none;
+    color: #878a92;
+    align-self: center;
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;

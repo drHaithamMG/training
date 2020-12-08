@@ -1,0 +1,64 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    background-color: transparent;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+
+}
+h1,h2,h3,h4.h5,h6{
+    color:#495057;
+}
+h1{
+    font-weight: bold;
+}
+
+/*style for google material design icons*/
+
+.material-icons.md-36 {
+    font-size: 28px;
+    color: #878a92;
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/MaterialIcons-Regular.ttf);
+    /* For IE6-8 */
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(../font/MaterialIcons-Regular.ttf) format('woff2'), url(../font/MaterialIcons-Regular.ttf) format('woff'), url(../font/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+    outline: none;
+    color: #878a92;
+    align-self: center;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}

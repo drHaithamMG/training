@@ -2,17 +2,17 @@
 /*My answer url: https://jsfiddle.net/haitham_mughrabi/q9Ldgfcw/1/ */
 
 /*solution 1*/
-// function createPhoneNumber(number) {
+function createPhoneNumber(number) {
 
-//     if (number.length == 10) {
-//     return `(${number[0]}${number[1]}${number[2]}) ${number[3]}${number[4]}${number[5]}-${number[6]}${number[7]}${number[8]}${number[9]} `;
-//     }
-//     else
-//         return `${number} is not a vaild number`
-// }
+    if (number.length == 10) {
+    return `(${number[0]}${number[1]}${number[2]}) ${number[3]}${number[4]}${number[5]}-${number[6]}${number[7]}${number[8]}${number[9]} `;
+    }
+    else
+        return `${number} is not a vaild number`
+}
 
-// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-// console.log(createPhoneNumber(numbers));
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+console.log(createPhoneNumber(numbers));
 
 /*Soultion 2*/
 // function createPhoneNumber(numbers) {

@@ -15,7 +15,6 @@ function sumMatches(arr) {
             if (key == arr[looper]) {
                 sum = sum + arr[looper];
                 item = looper;
-
             }
             else {
                 break;

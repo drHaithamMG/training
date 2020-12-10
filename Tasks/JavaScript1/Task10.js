@@ -1,14 +1,28 @@
-// <!-- You will be given a number and you will need to return it as a string. 
-// For example:
+/*Question url : https://jsfiddle.net/kLgenscp/1/ */
+/*https://jsfiddle.net/haitham_mughrabi/jrqg4s8v/1/ */
+console.log(expandedForm(42));
+console.log(expandedForm(70304));
+console.log(expandedForm(12));
 
-expandedForm(12); // Should return '10 + 2'
-expandedForm(42); // Should return '40 + 2'
-expandedForm(70304); // Should return '70000 + 300 + 4' -->
-
-function expandedForm(number){
-    strNumber=number.toString().split('').reverse();
-    for(let index=0;index<strNumber.length;index++){
-        strNumber[index]=strNumber[index]*1e(index+1);
-        console.log(strNumber[index]);
+function expandedForm(number) {
+    strNumber = number.toString().split('').reverse();
+    for (let index = 0; index < strNumber.length; index++) {
+        if (index > 0) {
+            strNumber[index] = strNumber[index] * Math.pow(10, index);
+        }
     }
+    strNumber = strNumber.reverse();
+    return sum(strNumber)
+}
+function sum(number) {
+    let answer = '';
+
+    for (let i = 0; i < number.length; i++) {
+        if (number[i] == 0) continue;
+        answer += number[i];
+        if (i < number.length - 1) {
+            answer += ' + ';
+        }
+    }
+    return answer
 }

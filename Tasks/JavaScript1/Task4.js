@@ -1,5 +1,5 @@
 /*Question url:  https://jsfiddle.net/ko9wte4n/3/ */
-/*My answer url: https://jsfiddle.net/haitham_mughrabi/q9Ldgfcw/1/ */
+/*My answer url: https://jsfiddle.net/haitham_mughrabi/q9Ldgfcw/2/ */
 
 /*solution 1*/
 function createPhoneNumber(number) {

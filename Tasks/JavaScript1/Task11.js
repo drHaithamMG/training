@@ -1,5 +1,5 @@
 /*Question url : https://jsfiddle.net/ygtn9hvm/ */
-/*https://jsfiddle.net/haitham_mughrabi/3w6q10p8/1/ */
+/*https://jsfiddle.net/haitham_mughrabi/3w6q10p8/2/ */
 function decipherThis(str) {
     newStr = str.split(' ');
     let encodeChar = '';
